@@ -16,8 +16,8 @@ pipeline {
                 }    
             }
             steps{
-                sh "pip install -r $WORKSPACE/python/requirements.txt"
-                sh "python $WORKSPACE/python/main.py"
+                echo "pip install -r $WORKSPACE/python/requirements.txt"
+                echo "python $WORKSPACE/python/main.py"
             }
         }
             
